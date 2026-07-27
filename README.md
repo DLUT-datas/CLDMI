@@ -26,9 +26,9 @@ Create the conda environment:
 
 ### Step 1: Prepare dataset
 
-# The processed datasets, including molecular fingerprints, descriptors, and required auxiliary features, are provided in the Zenodo repository (https://zenodo.org/records/21512952). Users can directly use these files for model training and evaluation.
+The processed datasets, including molecular fingerprints, molecular descriptors, and auxiliary features, are available in the Zenodo repository (https://zenodo.org/records/21512952). Users can directly use these files for model training and evaluation.
 
-# For users who want to apply CLDMI to new datasets, the preprocessing pipeline is provided in this repository. The raw dataset only needs to be replaced with the target dataset following the same format, and the remaining preprocessing steps can be performed using the provided scripts.
+For users who want to apply CLDMI to new datasets, the preprocessing pipeline is provided in this repository. The raw dataset only needs to be replaced with the target dataset following the same format, and the remaining preprocessing steps can be performed using the provided scripts.
 
     Construct molecular line graphs and extract the molecular descriptors and the fingerprints from SMILES in a downstream dataset (e.g., bace):
 
