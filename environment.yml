@@ -1,0 +1,66 @@
+name: CLDMI
+
+channels:
+  - pytorch
+  - dglteam
+  - pyg
+  - conda-forge
+  - defaults
+
+dependencies:
+
+  # =====================
+  # Python
+  # =====================
+  - python=3.7
+
+
+  # =====================
+  # Deep Learning
+  # =====================
+  - pytorch=1.12.0
+  - torchvision=0.13.0
+  - torchaudio=0.12.0
+  - cudatoolkit=11.6
+
+
+  # =====================
+  # Graph Neural Networks
+  # =====================
+  - dgl-cuda11.6=0.9.1
+  - pyg
+
+
+  # =====================
+  # Chemistry Toolkit
+  # =====================
+  - rdkit=2020.03.3
+  - mordred=1.2.0
+
+
+  # =====================
+  # Data Processing
+  # =====================
+  - numpy=1.21.5
+  - scipy=1.7.3
+  - pandas=1.3.5
+  - scikit-learn=0.22.1
+  - networkx=2.6.3
+
+
+  # =====================
+  # Utilities
+  # =====================
+  - tqdm=4.64.1
+  - pyyaml
+  - openpyxl
+
+
+  # =====================
+  # LLM-related packages
+  # =====================
+  - pip
+  - pip:
+      - transformers==4.33.3
+      - accelerate==0.23.0
+      - sentencepiece==0.1.99

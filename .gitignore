@@ -1,0 +1,21 @@
+# datasets
+data/
+datasets/
+**/datasets/
+*.csv
+
+# checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# results and logs
+results/
+logs/
+
+# python cache
+__pycache__/
+*.pyc
+
+# vscode
+.vscode/
