@@ -30,8 +30,8 @@ For users who want to apply CLDMI to new datasets, the preprocessing pipeline is
         python data_scaffold_split.py  
 
     2. Extract the molecular descriptors of the SMILES in the PubChem324kV2_merged_dkj dataset:
-        python preprocess_pretrain_dataset_stage1.py --data_path ./datasets/PubChem324kV2_merged_dkj/process_raw_scaffold/train  --dataset PubChem324kV2_merged_dkj_train
-        python preprocess_pretrain_dataset_stage1.py --data_path ./datasets/PubChem324kV2_merged_dkj/process_raw_scaffold/valid  --dataset PubChem324kV2_merged_dkj_valid
+        python preprocess_pretrain_dataset_stage1.py --data_path ./datasets/PubChem324kV2_merged_dkj_filtered/process_raw_scaffold/train  --dataset PubChem324kV2_merged_dkj_filtered_train
+        python preprocess_pretrain_dataset_stage1.py --data_path ./datasets/PubChem324kV2_merged_dkj_filtered/process_raw_scaffold/valid  --dataset PubChem324kV2_merged_dkj_filtered_valid
 
 
 
@@ -39,10 +39,10 @@ For users who want to apply CLDMI to new datasets, the preprocessing pipeline is
 
 
     Step 1 Training of the dimensional adapter:
-        python pretrain_chemllm_TSM_step1.py --output_model_dir ./pretrained_models_TSM_20251208 --batch_size 32
+        python pretrain_chemllm_KD_step1.py --output_model_dir ./pretrained_models_dim_adapter --batch_size 32
 
-    Step 2 Prompt-guided cross-modal knowledge distillation: 
-        python pretrain_chemllm_TSM_step2.py --output_model_dir ./pretrained_models_TSM_20251209 --batch_size 32
+    Step 2 Cross-modal knowledge distillation with prompt guidance : 
+        python pretrain_chemllm_KD_step2.py --output_model_dir ./pretrained_models_PgKD_student --batch_size 32
 
 
 
