@@ -13,7 +13,7 @@ python finetune_cmpn.py \
     --seed $seed_i \
     --split_type 'scaffold_balanced' \
     --save_dir ./result_TSM_finetuned_CMPN_demo/bbbp \
-    --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+    --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
     --load_from_TSM \
     --save_smiles_splits
 
@@ -21,7 +21,7 @@ done
 
 
 
-# for seed_i in 2 # 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20   
+# for seed_i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20   
 # do
 # python finetune_cmpn.py \
 #     --data_path ./datasets/bace/bace.csv \
@@ -29,7 +29,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/bace \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -38,7 +38,6 @@ done
 
 
 # for seed_i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20   
-# for seed_i in 6 
 # do
 # python finetune_cmpn.py \
 #     --data_path ./datasets/clintox/clintox.csv \
@@ -46,7 +45,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/clintox \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -61,7 +60,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/sider \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -76,7 +75,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/tox21 \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -92,7 +91,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/toxcast \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -109,7 +108,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/esol \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -125,7 +124,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/freesolv \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -141,7 +140,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/lipo \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -158,7 +157,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/Ephrin \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -174,7 +173,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/COX-2 \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
@@ -190,7 +189,7 @@ done
 #     --seed $seed_i \
 #     --split_type 'scaffold_balanced' \
 #     --save_dir ./result_TSM_finetuned_CMPN/pdbbind_full \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_smiles_splits
 
