@@ -153,7 +153,7 @@ class FeatureGatedResidualFusion_ab_ConcatFusion(nn.Module):
         else:
             raise ValueError(f"Unsupported activation: {activation}")
 
-        # 1. modality projection
+        
         self.proj = nn.Sequential(
             nn.Linear(dim_g+dim_l, hidden_dim),
             nn.LayerNorm(hidden_dim) if use_layernorm else nn.Identity(),
@@ -176,8 +176,10 @@ class FeatureGatedResidualFusion_ab_ConcatFusion(nn.Module):
         """
 
 
-        h_fused = torch.cat([z_g, z_l], dim=-1)
+        h_concated = torch.cat([z_g, z_l], dim=-1)
+        
         z = self.proj(h_concated)
+        
         pred = self.predictor(z)
 
         fusion_info = {"z_g": z_g, "z_l": z_l, "fusion_embedding": h_fused}
