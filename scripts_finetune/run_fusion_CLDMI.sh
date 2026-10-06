@@ -9,7 +9,7 @@
 #     --metric roc-auc \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0 \
@@ -33,7 +33,7 @@
 #     --metric roc-auc \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -57,7 +57,7 @@
 #     --metric roc-auc \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -81,7 +81,7 @@
 #     --metric roc-auc \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -106,7 +106,7 @@
 #     --metric roc-auc \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -132,7 +132,7 @@
 #     --metric roc-auc \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -157,7 +157,7 @@
 #     --metric rmse \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -182,7 +182,7 @@
 #     --metric rmse \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -207,7 +207,7 @@
 #     --metric rmse \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -231,7 +231,7 @@
 #     --metric rmse \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -256,7 +256,7 @@
 #     --metric rmse \
 #     --split_type scaffold_balanced \
 #     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-#     --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+#     --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
 #     --load_from_TSM \
 #     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
 #     --dropout 0\
@@ -280,7 +280,7 @@ python fusion_CLDMI.py \
     --metric rmse \
     --split_type scaffold_balanced \
     --lgt_model_path ./pretrained_KeLGT_HSSL/pretrained/base_dkj/base_20.pth \
-    --checkpoint_path "./pretrained_TSM_CMPN/molecule_graph_model_20.pth"\
+    --checkpoint_path "./pretrained_CMPN_PgKD_initialized_from_random/molecule_graph_model_best.pth"\
     --load_from_TSM \
     --save_path ./result_finetune_fused_w_3s_bs32_64_CLDMI \
     --dropout 0\
