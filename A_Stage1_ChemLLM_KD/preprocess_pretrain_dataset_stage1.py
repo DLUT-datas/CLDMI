@@ -152,6 +152,3 @@ if __name__ == '__main__':
     preprocess_dataset_4_stage1(args)
 
 
-    # python preprocess_pretrain_dataset_stage1.py --data_path ./datasets/PubChem324kV2_merged_dkj/process_raw_scaffold/train  --dataset PubChem324kV2_merged_dkj_train
-
-    # python preprocess_pretrain_dataset_stage1.py --data_path ./datasets/PubChem324kV2_merged_dkj/process_raw_scaffold/valid  --dataset PubChem324kV2_merged_dkj_valid
