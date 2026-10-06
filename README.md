@@ -46,47 +46,42 @@ For users who want to apply CLDMI to new datasets, the preprocessing pipeline is
     bash scripts_finetune/run_fusion_CLDMI.sh
 
 
-## Ablation of Knowledge Distillation and Hierarchical SSL (Q4)
+## Ablation of knowledge distillation with prompt guidance (Q3)
 
 # CMPN branch: 
     1. student model(CLDMI-G): 
         bash scripts_finetune/run_TSM_cmpn.sh
 
-    2. student model variant removed the prompt mechanism during dimensional adapter training(CLDMI-G_T_wo_PT): 
+    2. student model variant removed the prompt guidance (CLDMI-G_w/o_PT): 
         bash scripts_finetune/run_TSM_cmpn_T_wo_Pt_S_w_Pt.sh
 
-    2. student model variant removed the prompt mechanism during student-side knowledge distillation(CLDMI-G_S_wo_PT): 
+    2. student model variant removed the knowledge distillation(CLDMI-G_w/o_KD): 
         bash scripts_finetune/run_TSM_cmpn_T_w_Pt_S_wo_Pt.sh
 
-    4. student model variant w.o. knowledge distillation(CLDMI-G_wo_KD): 
+    4. student model variant with random initialization (CMPNN): 
         bash scripts_finetune/run_TSM_cmpn_wo_KD.sh
 
+## Ablation of Hierarchical SSL (Q4)
 # KeLGT branch:
     1. KeLGT with Hierarchical SSL (CLDMI-KLG): 
         bash scripts_finetune/run_kelgt_HSSL.sh
 
-    2. KeLGT variant removed the molecular-level SA prediction objective (CLDMI-KLG_wo_SA): 
+    2. KeLGT variant removed the molecular-level SA prediction objective (CLDMI-KLG w/o SA): 
         bash scripts_finetune/run_kelgt_HSSL_wo_SA.sh
 
+    3. KeLGT variant removed the modality-level SSL prediction objective (CLDMI-KLG w/o ModL): 
+        bash scripts_finetune/run_kelgt_HSSL_wo_ModL.sh
 
 
 ## Ablation Study of Representation-level Fusion (Q5)
-    
-    1. two pretrained encoders joint fine-tuning in an end-to-end manner (CLDMI-JF): 
-        bash scripts_finetune/run_fusion_joint_finetune_bs32.sh
 
-    # decouples view-specific representation learning from cross-view integration
-
-    2. decoupled feature-wise gated representation-level fusion (CLDMI-FGRF): 
+    1. decoupled feature-wise gated representation-level fusion (CLDMI-FGRF): 
         bash scripts_finetune/run_fusion_FGRF.sh
 
-    3. decoupled concatenation fusion (CLDMI-CF): 
+    2. decoupled concatenation fusion (CLDMI-CF): 
         bash scripts_finetune/run_fusion_ablation_concat.sh
 
-    4. decoupled average fusion (CLDMI-AvgF): 
-        bash scripts_finetune/run_fusion_ablation_avg.sh
-
-    5. decoupled adaptive weighted fusion (CLDMI-AWF): 
+    3. decoupled adaptive weighted fusion (CLDMI-AWF): 
         bash scripts_finetune/run_fusion_ablation_adaptive.sh
 
 
