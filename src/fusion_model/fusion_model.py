@@ -154,19 +154,13 @@ class FeatureGatedResidualFusion_ab_ConcatFusion(nn.Module):
             raise ValueError(f"Unsupported activation: {activation}")
 
         # 1. modality projection
-        self.proj_g = nn.Sequential(
-            nn.Linear(dim_g, hidden_dim),
+        self.proj = nn.Sequential(
+            nn.Linear(dim_g+dim_l, hidden_dim),
             nn.LayerNorm(hidden_dim) if use_layernorm else nn.Identity(),
             act,
             nn.Dropout(dropout),
         )
 
-        self.proj_l = nn.Sequential(
-            nn.Linear(dim_l, hidden_dim),
-            nn.LayerNorm(hidden_dim) if use_layernorm else nn.Identity(),
-            act,
-            nn.Dropout(dropout),
-        )
 
         self.predictor = nn.Sequential(
             nn.Linear(2*hidden_dim, hidden_dim),
@@ -181,12 +175,10 @@ class FeatureGatedResidualFusion_ab_ConcatFusion(nn.Module):
         h_l: line graph embedding from Transformer
         """
 
-        z_g = self.proj_g(h_g)
-        z_l = self.proj_l(h_l)
 
         h_fused = torch.cat([z_g, z_l], dim=-1)
-
-        pred = self.predictor(h_fused)
+        z = self.proj(h_concated)
+        pred = self.predictor(z)
 
         fusion_info = {"z_g": z_g, "z_l": z_l, "fusion_embedding": h_fused}
 
