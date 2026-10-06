@@ -52,14 +52,14 @@ For users who want to apply CLDMI to new datasets, the preprocessing pipeline is
     1. student model(CLDMI-G): 
         bash scripts_finetune/run_TSM_cmpn.sh
 
-    2. student model variant removed the prompt guidance (CLDMI-G_w/o_PT): 
-        bash scripts_finetune/run_TSM_cmpn_T_wo_Pt_S_w_Pt.sh
+    2. student model variant removed the prompt guidance (CLDMI-G_w/o_PG): 
+        bash scripts_finetune/run_TSM_cmpn_TS_wo_PG.sh
 
     2. student model variant removed the knowledge distillation(CLDMI-G_w/o_KD): 
-        bash scripts_finetune/run_TSM_cmpn_T_w_Pt_S_wo_Pt.sh
+        bash scripts_finetune/run_TSM_cmpn_wo_KD.sh
 
     4. student model variant with random initialization (CMPNN): 
-        bash scripts_finetune/run_TSM_cmpn_wo_KD.sh
+        bash scripts_finetune/run_cmpn.sh
 
 ## Ablation of Hierarchical SSL (Q4)
 # KeLGT branch:
