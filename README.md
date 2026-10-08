@@ -5,6 +5,11 @@ This repository contains the code and resources of the following paper:
 ChemLLM-Distilled Multimodal Information Integration for Molecular Property Prediction
     
 
+## Datasets, trained model checkpoints and experimental results
+The benchmark datasets, trained model checkpoints and experimental results generated in this study are publicly available through the Zenodo repository: https://zenodo.org/records/21512952.
+
+
+
 ## Overview of the framework
 CLDMI is a multimodal molecular representation learning framework designed for molecular property prediction. It combines ChemLLM knowledge distillation, knowledge-enhanced line graph Transformer learning, and feature-wise gated representation fusion to learn complementary molecular representations from multiple views.
 
